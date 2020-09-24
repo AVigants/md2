@@ -7,4 +7,144 @@ html, body{
   margin: 0;
   height: 100%;
 }
+img{
+    width: 100%;
+}
 /* --------------------------------------NAVBAR------------------------------------ */
+.navbar{
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+.navbar div a{
+    border: 1px solid #73b6e2;
+    border-radius: 3px;
+    padding: 10px;
+}
+.navbar div:first-of-type{
+    float:left;
+    width: 25%;
+    padding: 25px 0;
+    background-color: #333;
+}
+.navbar div:nth-of-type(2){
+    float:left;
+    width: 25%;
+    padding: 25px 0;
+    background-color: #333;
+
+}
+.navbar div:nth-of-type(3){
+    float:left;
+    width: 25%;
+    padding: 25px 0;
+    background-color: #333;
+
+}
+.navbar div:nth-of-type(4){
+    float:right;
+    width: 25%;
+    padding: 25px 0;
+    background-color: #333;
+
+}
+.navbar div a{
+    text-decoration: none;
+    color:white;
+
+}
+.navbar div a.active{
+    color: deeppink;
+}
+.navbar div a:hover{
+    color:pink;
+}
+.navbar div a:active{
+    color: deeppink;
+}
+/* ---------------------------------------------BANNER------------------------------------ */
+.banner{
+    padding: 2% 5% 4%;
+    text-align: center;
+    color: white;
+    background-color: #73B6E2;
+  }
+  .banner h1{
+    font-size: 3em;
+    margin-top: 90px;
+  }
+  
+  .banner h1::selection, h2::selection{
+    background-color: #333;
+    color:pink;
+  }
+
+/* ----------------------------------------------------CARDS-------------------------------------- */
+.container{
+    overflow: auto;
+    margin: 5% 7%;
+    text-align: justify;
+}
+.container div:first-of-type{
+    float:left;
+    width: 25%;
+    padding: 20px;
+}
+.container div:nth-of-type(2){
+    float:left;
+    width: 25%;
+    padding: 20px;
+}
+.container div:nth-of-type(3){
+    float:left;
+    width: 25%;
+    padding: 20px;
+}
+.container div:last-of-type{
+    float:right;
+    width: 25%;
+    padding: 20px;
+}
+
+/* -------------------------------FOOTER---------------------------------------------------- */
+.footer{
+padding: 2% 5% 4%;
+text-align: center;
+color: white;
+background-color: #73B6E2;
+}
+.footer h1::selection, h2::selection{
+background-color: #333;
+color:pink;
+}
+
+/* ----------------------------------------MEDIA QUERY------------------------------------------ */
+@media (max-width: 992px) {
+    .container div:first-of-type{
+        float: left;
+        width: 50%;
+    }
+    .container div:nth-of-type(2){
+        float:right;
+        width:50%;
+    }
+    .container div:nth-of-type(3){
+        float:left;
+        width: 50%;
+    }
+    .conatiner div:last-of-type{
+        float: right;
+        width: 50%;
+    }
+}
+@media (max-width: 576px) {
+    .container div{
+        max-width: 100%;
+    }
+    body > div.banner > h2{
+        font-size: 1em;
+    }
+    .footer h2{
+        font-size: 1em;
+    }
+}

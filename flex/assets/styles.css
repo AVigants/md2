@@ -21,6 +21,7 @@ html, body{
 .navbar div{
   padding: 8px;
   border: 1px solid #73b6e2;
+  border-radius: 3px;
 }
 .navbar div a{
   text-decoration: none;
