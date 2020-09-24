@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+* {
+  box-sizing: border-box;
+}
+html, body{
+  font-family: tenor sans, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+/* ----------------------------------NAVBAR-------------------------------------------------- */
+.navbar{
+  display:flex;
+  background-color: #333;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top:0;
+  height: 10%;
+}
+.navbar div{
+  padding: 8px;
+  border: 1px solid #73b6e2;
+}
+.navbar div a{
+  text-decoration: none;
+  color:white;
+}
+
+.navbar div a.active{
+  color: deeppink;
+}
+.navbar div a:hover{
+  color:pink;
+}
+.navbar div a:active{
+  color: deeppink;
+}
+
+/* -----------------------------------------------CARDS------------------------------ */
+img{
+  width: 100%;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 7%;
+}
+.container div{
+  max-width: 25%;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* ---------------------------------------BANNER------------------------------------------------------- */
+.banner{
+  padding: 2% 5% 4%;
+  text-align: center;
+  color: white;
+  background-color: #73B6E2;
+}
+.banner h1{
+  font-size: 3em;
+}
+
+.banner h1::selection, h2::selection{
+  background-color: #333;
+  color:pink;
+}
+/* ------------------------------------------FOOTER-------------------------------------------------- */
+.footer{
+  padding: 2% 5% 4%;
+  text-align: center;
+  color: white;
+  background-color: #73B6E2;
+}
+.footer h1::selection, h2::selection{
+  background-color: #333;
+  color:pink;
+}
+
+/* ----------------------------------------MEDIA QUERY------------------------------------------ */
+@media (max-width: 992px) {
+    .container div{
+      max-width: 50%;
+    }
+  }
+@media (max-width: 576px) {
+    .container div{
+        max-width: 100%;
+    }
+    body > div.banner > h2{
+        font-size: 1em;
+    }
+    .footer h2{
+        font-size: 1em;
+    }
+}
